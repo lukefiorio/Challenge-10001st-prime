@@ -1,8 +1,4 @@
 module.exports = function(n) {
-  // do work here
-};
-
-function findPrime(n) {
   function isPrime(candidate) {
     // loop up to sqrt of a number to determine whether it's prime
     for (i = 2; i ** 2 <= candidate; i++) {
@@ -24,7 +20,6 @@ function findPrime(n) {
       candidates++;
     }
   }
-  console.log(candidates - 1);
-}
 
-findPrime(10000);
+  return candidates - 1;
+};
